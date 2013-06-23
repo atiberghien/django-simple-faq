@@ -1,5 +1,10 @@
+from django.conf import settings
 from django.db import models
-from tinymce import models as tinymce_models
+
+if 'cked' in settings.INSTALLED_APPS:
+    from cked.fields import RichTextField
+elif 'tinymce' in settings.INSTALLED_APPS:
+    from tinymce.models import HTMLField as RichTextField
 
 photos_path = "simple-faq/"
 
@@ -17,7 +22,7 @@ class Topic(models.Model):
 
 class Question(models.Model):
     text = models.CharField(max_length=200)
-    answer_text = tinymce_models.HTMLField()
+    answer_text = RichTextField()
     topic = models.ForeignKey(Topic, related_name="questions")
     header_picture = models.ImageField(upload_to=photos_path, blank=True)
     number = models.IntegerField()
