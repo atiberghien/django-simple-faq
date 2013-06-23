@@ -2,7 +2,7 @@
 
 <h2 id="topic-{{ topic.id }}" class="topic">{{ topic.text }}</h2>
 {% for question in topic.questions.all %}
-    {% include 'question_detail.html' with question=question %}
+    {% include 'simple_faq/question_detail.html' with question=question %}
 {% empty %}
     <a id="no-question-anchor-{{ topic.id }}" class="no_question_anchor">
         <img id="no-question-image-{{ topic.id }}" class="no_question_image" src="">

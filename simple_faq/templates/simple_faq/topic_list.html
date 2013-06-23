@@ -5,7 +5,7 @@
 
     <div id="faq" class="faq">
     {% for topic in topics %}
-        {% include 'question_list.html' with topic=topic%}
+        {% include 'simple_faq/question_list.html' with topic=topic%}
     {% empty %}
         <h2 id="no-topic" class="no_topic">{% blocktrans %}No topics available!{% endblocktrans %}</h2>
         <a id="no-question-anchor" class="no_question_anchor">
