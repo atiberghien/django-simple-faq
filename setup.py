@@ -4,7 +4,7 @@ from distutils.core import setup
 import os
 
 version = __import__('simple_faq').__version__
-install_requires = open('requirements.txt').readlines(),
+#install_requires = open('requirements.txt').readlines(),
 
 # Compile the list of packages available, because distutils doesn't have
 # an easy way to do this.
@@ -46,7 +46,7 @@ setup(
 
     download_url='http://pypi.python.org/packages/source/d/django-simple-faq/django-simple-faq-%s.tar.gz' % version,
 
-    install_requires=install_requires,
+    #install_requires=install_requires,
 
     classifiers=[
         'Development Status :: 3 - Alpha',
