@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-23 17:58+0200\n"
+"POT-Creation-Date: 2013-12-13 07:26+0100\n"
 "PO-Revision-Date: 2013-06-23 18:05+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,10 +47,10 @@ msgstr "image"
 msgid "related questions"
 msgstr "questions liées"
 
-#: templates/question_list.html:10
+#: templates/simple_faq/question_list.html:10
 msgid "No questions available!"
 msgstr "aucune question"
 
-#: templates/topic_list.html:10
+#: templates/simple_faq/topic_list.html:10
 msgid "No topics available!"
 msgstr "aucun sujet"
